@@ -68,6 +68,9 @@ class Delitos:
         self.delitos: List[Delito] = []
         self.__parse_raw_data(raw_csv_data)
 
+    def dummy(self):
+        pass
+
     def __parse_raw_data(self, raw_data):
         for delito_dict in raw_data:
             self.delitos.append(Delito(data=delito_dict))
